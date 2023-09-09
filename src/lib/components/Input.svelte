@@ -1,10 +1,19 @@
 <script lang="ts">
+	import type { Color } from '$lib';
+
+	export let color: Color = 'cyan';
 	export let disabled = false;
 	export let placeholder: string | null = null;
 	export let value = '';
 </script>
 
-<input type="text" {disabled} {placeholder} bind:value />
+<input
+	type="text"
+	style:--color-normal="var(--bounce-{color}-normal)"
+	{disabled}
+	{placeholder}
+	bind:value
+/>
 
 <style>
 	input {
@@ -30,6 +39,10 @@
 		transform: translateX(5px) translateY(-5px);
 		outline: 2px solid var(--bounce-black);
 		box-shadow: -5px 5px 0 0 var(--bounce-gray), -5px 5px 0 2px var(--bounce-black);
+	}
+
+	input:not(:disabled):focus-visible {
+		outline-color: var(--color-normal);
 	}
 
 	input:not(:disabled):active {
