@@ -4,9 +4,10 @@
 
 <nav>
 	<div>
-		<div class="logo">
+		<Button color="cyan" rounded>
 			<h3>B</h3>
-		</div>
+		</Button>
+		<h3 class="rainbow">bounce.css Svelte</h3>
 	</div>
 
 	<div class="buttons">
