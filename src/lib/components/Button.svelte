@@ -8,6 +8,7 @@
 
 <svelte:element
 	this={href ? 'a' : 'button'}
+	role="button"
 	{href}
 	style:--color-normal={color ? `var(--bounce-${color}-normal)` : null}
 	style:--color-dark={color ? `var(--bounce-${color}-dark)` : null}
