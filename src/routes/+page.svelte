@@ -16,6 +16,9 @@
 	<h3>How to use?</h3>
 	<p>TODO</p>
 
+	<h3>What about crediting?</h3>
+	<p>TODO</p>
+
 	<hr />
 
 	<h3>Text</h3>
