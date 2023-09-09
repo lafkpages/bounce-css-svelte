@@ -4,4 +4,6 @@
 	export let color: OptionalColor = null;
 </script>
 
-<button class={color} />
+<button class={color}>
+	<slot />
+</button>
