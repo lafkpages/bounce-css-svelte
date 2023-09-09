@@ -1,6 +1,10 @@
 {
 	"name": "bounce-css-svelte",
 	"version": "0.0.1",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/lafkpages/bounce-css-svelte.git"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
