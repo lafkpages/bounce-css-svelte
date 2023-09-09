@@ -2,6 +2,7 @@
 	import { colors } from '$lib';
 
 	import Button from '$lib/components/Button.svelte';
+	import Input from '$lib/components/Input.svelte';
 	import Link from '$lib/components/Link.svelte';
 	import Mark from '$lib/components/Mark.svelte';
 </script>
@@ -86,6 +87,11 @@
 	<hr />
 
 	<h3>Inputs</h3>
+
+	{#each colors as color}
+		<Input {color} />
+	{/each}
+	<Input disabled />
 </main>
 
 <style>
