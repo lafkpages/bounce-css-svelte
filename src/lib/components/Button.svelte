@@ -25,4 +25,10 @@
 		margin: 8px 0 8px 0;
 		border: none;
 	}
+
+	button:hover,
+	button:focus-visible {
+		transform: translateX(5px) translateY(-5px);
+		box-shadow: -5px 5px 0 0 var(--bounce-gray), -5px 5px 0 2px var(--bounce-black);
+	}
 </style>
