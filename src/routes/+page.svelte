@@ -38,7 +38,12 @@
 
 	<h3>Buttons</h3>
 
-	<Button color="cyan">Cyan</Button>
+	<div class="buttons">
+		{#each colors as color}
+			<Button {color}>Button</Button>
+			<Button {color} disabled>Button</Button>
+		{/each}
+	</div>
 </main>
 
 <style>
@@ -47,5 +52,12 @@
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.buttons {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		width: max-content;
+		gap: 32px 16px;
 	}
 </style>
