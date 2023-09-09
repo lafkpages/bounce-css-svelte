@@ -1,6 +1,7 @@
 {
 	"name": "bounce-css-svelte",
 	"version": "0.0.1",
+	"author": "LuisAFK",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/lafkpages/bounce-css-svelte.git"
