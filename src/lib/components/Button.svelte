@@ -4,7 +4,10 @@
 	export let color: OptionalColor = null;
 </script>
 
-<button style:--color="var(--bounce-{color}-normal)">
+<button
+	style:--color="var(--bounce-{color}-normal)"
+	style:--shadow={color ? `var(--bounce-${color}-dark)` : null}
+>
 	<slot />
 </button>
 
@@ -29,6 +32,6 @@
 	button:hover,
 	button:focus-visible {
 		transform: translateX(5px) translateY(-5px);
-		box-shadow: -5px 5px 0 0 var(--bounce-gray), -5px 5px 0 2px var(--bounce-black);
+		box-shadow: -5px 5px 0 0 var(--shadow, var(--bounce-gray)), -5px 5px 0 2px var(--bounce-black);
 	}
 </style>
