@@ -2,6 +2,7 @@
 	import { colors } from '$lib';
 
 	import Button from '$lib/components/Button.svelte';
+	import Link from '$lib/components/Link.svelte';
 	import Mark from '$lib/components/Mark.svelte';
 </script>
 
@@ -61,6 +62,14 @@
 			<Button {color} disabled>Disabled</Button>
 		{/each}
 	</div>
+
+	<hr />
+
+	<h3>Links</h3>
+
+	{#each [null, ...colors] as color}
+		<Link href="#" {color}>Link</Link>
+	{/each}
 </main>
 
 <style>
