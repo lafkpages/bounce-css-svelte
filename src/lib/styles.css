@@ -13,6 +13,36 @@
 	src: url('https://bouncecss.bookie0.repl.co/Fonts/Clash Grotesk/ClashGrotesk-Medium.otf');
 }
 
+:root {
+	--bounce-white: #ffffff;
+
+	--bounce-light-gray: #efefef;
+	--bounce-gray: #d8d8d8;
+
+	--bounce-black: #000000;
+	--bounce-dark-gray: #5e5e5e;
+
+	--bounce-cyan-dark: #28a489;
+	--bounce-cyan-normal: #70f1d5;
+	--bounce-cyan-light: #cafff3;
+
+	--bounce-pink-dark: #ab4787;
+	--bounce-pink-normal: #e065b3;
+	--bounce-pink-light: #ffb0e2;
+
+	--bounce-yellow-dark: #c9b951;
+	--bounce-yellow-normal: #fae560;
+	--bounce-yellow-light: #fff6be;
+
+	--bounce-blue-dark: #468db6;
+	--bounce-blue-normal: #54b8f3;
+	--bounce-blue-light: #b4e3ff;
+
+	--bounce-purple-dark: #643f9b;
+	--bounce-purple-normal: #9260de;
+	--bounce-purple-light: #cdaefd;
+}
+
 h1 {
 	font-size: 64px;
 	line-height: 96px;
