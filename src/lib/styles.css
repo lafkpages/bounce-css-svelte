@@ -1,0 +1,20 @@
+@font-face {
+	font-family: 'Clash Display Bold';
+	src: url('https://bouncecss.bookie0.repl.co/Fonts/Clash Display/ClashDisplay-Bold.otf');
+}
+
+@font-face {
+	font-family: 'Clash Display Semibold';
+	src: url('https://bouncecss.bookie0.repl.co/Fonts/Clash Display/ClashDisplay-Semibold.otf');
+}
+
+@font-face {
+	font-family: 'Clash Grotesk Medium';
+	src: url('https://bouncecss.bookie0.repl.co/Fonts/Clash Grotesk/ClashGrotesk-Medium.otf');
+}
+
+h1 {
+	font-size: 64px;
+	line-height: 96px;
+	font-family: 'Clash Display Bold', sans-serif;
+}
