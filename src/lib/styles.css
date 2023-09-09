@@ -141,8 +141,8 @@ hr {
 }
 
 ul {
-	margin: 8px 0 8px 0;
-	padding-left: 0;
+	margin: 8px 0;
+	padding: 0px;
 	list-style: none;
 }
 
@@ -186,6 +186,7 @@ ul li.purple::before {
 
 ol {
 	margin: 8px 0 8px 12px;
+	padding: 0px;
 }
 
 ol li.cyan::marker {
