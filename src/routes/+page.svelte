@@ -9,7 +9,7 @@
 <main>
 	<h3>What is this?</h3>
 	<p>
-		<span class="rainbow">bounce.css Svelte</span> is a collection of fun CSS styles that you can use
+		<span class="rainbow">bounce.css Svelte</span> is a component library in Svelte that you can use
 		to create simple websites!
 	</p>
 
