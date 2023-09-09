@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { Color } from '$lib';
+	import type { Color } from '$lib/index.js';
 
 	export let color: Color = 'cyan';
 </script>

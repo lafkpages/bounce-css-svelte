@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { colors } from '$lib';
+	import { colors } from '$lib/index.js';
 
 	import Button from '$lib/components/Button.svelte';
 	import Input from '$lib/components/Input.svelte';

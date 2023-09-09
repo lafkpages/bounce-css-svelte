@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { OptionalColor } from '$lib';
+	import type { OptionalColor } from '$lib/index.js';
 
 	export let color: OptionalColor = null;
 	export let disabled = false;
