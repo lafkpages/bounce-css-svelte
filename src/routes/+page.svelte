@@ -7,7 +7,11 @@
 </script>
 
 <main>
-	<h1>Bounce.css for Svelte</h1>
+	<h3>What is this?</h3>
+	<p>
+		<span class="rainbow">bounce.css Svelte</span> is a collection of fun CSS styles that you can use
+		to create simple websites!
+	</p>
 
 	<hr />
 
@@ -72,6 +76,10 @@
 			<Link href="#" {color}>Link</Link>
 		{/each}
 	</div>
+
+	<hr />
+
+	<h3>Inputs</h3>
 </main>
 
 <style>
