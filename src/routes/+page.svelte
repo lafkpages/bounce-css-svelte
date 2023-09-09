@@ -89,9 +89,9 @@
 	<h3>Inputs</h3>
 
 	{#each colors as color}
-		<Input {color} />
+		<Input {color} placeholder="Input" />
 	{/each}
-	<Input disabled />
+	<Input disabled placeholder="Disabled" />
 </main>
 
 <style>
