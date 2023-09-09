@@ -1,11 +1,7 @@
 <script lang="ts">
-	import '$lib/styles.css';
-
-	import Nav from '$lib/components/Nav.svelte';
+	import Layout from '$lib/components/Layout.svelte';
 </script>
 
-<Nav />
-
-<div class="main">
+<Layout>
 	<slot />
-</div>
+</Layout>
