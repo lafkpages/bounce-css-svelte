@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { colors } from '$lib';
+
+	import Button from '$lib/components/Button.svelte';
 </script>
 
 <main>
@@ -31,6 +33,12 @@
 			<li class={color}>List item</li>
 		{/each}
 	</ol>
+
+	<hr />
+
+	<h3>Buttons</h3>
+
+	<Button color="cyan">Cyan</Button>
 </main>
 
 <style>
