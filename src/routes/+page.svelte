@@ -1,3 +1,7 @@
+<script lang="ts">
+	import { colors } from '$lib';
+</script>
+
 <h1>Bounce.css for Svelte</h1>
 
 <hr />
@@ -16,13 +20,13 @@
 <h3>Lists</h3>
 
 <ul>
-	{#each { length: 5 } as _, i}
-		<li>List item</li>
+	{#each colors as color}
+		<li class={color}>List item</li>
 	{/each}
 </ul>
 
 <ol>
-	{#each { length: 5 } as _, i}
-		<li>List item</li>
+	{#each colors as color}
+		<li class={color}>List item</li>
 	{/each}
 </ol>

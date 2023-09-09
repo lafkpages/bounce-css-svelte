@@ -105,3 +105,71 @@ hr {
 	background-color: var(--bounce-dark-gray);
 	margin: 32px 0px;
 }
+
+ul {
+	margin: 8px 0 8px 0;
+	padding-left: 0;
+	list-style: none;
+}
+
+ul > li {
+	display: flex;
+	align-items: center;
+	gap: 4px;
+}
+
+ul li::before {
+	content: '\2022';
+	border: 1px solid var(--bounce-black);
+	border-radius: 50%;
+	width: 4px;
+	height: 4px;
+	display: flex;
+	line-height: 5px;
+	font-size: 16px;
+	justify-content: center;
+}
+
+ul li.cyan::before {
+	color: var(--bounce-cyan-normal);
+}
+
+ul li.pink::before {
+	color: var(--bounce-pink-normal);
+}
+
+ul li.yellow::before {
+	color: var(--bounce-yellow-normal);
+}
+
+ul li.blue::before {
+	color: var(--bounce-blue-normal);
+}
+
+ul li.purple::before {
+	color: var(--bounce-purple-normal);
+}
+
+ol {
+	margin: 8px 0 8px 12px;
+}
+
+ol li.cyan::marker {
+	color: var(--bounce-cyan-dark);
+}
+
+ol li.pink::marker {
+	color: var(--bounce-pink-dark);
+}
+
+ol li.yellow::marker {
+	color: var(--bounce-yellow-dark);
+}
+
+ol li.blue::marker {
+	color: var(--bounce-blue-dark);
+}
+
+ol li.purple::before {
+	color: var(--bounce-purple-dark);
+}
