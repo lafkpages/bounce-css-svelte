@@ -9,6 +9,10 @@
 	let inputsValue = '';
 </script>
 
+<svelte:head>
+	<title>bounce.css Svelte ~ Fun Svelte components!</title>
+</svelte:head>
+
 <main>
 	<h3>What is this?</h3>
 	<p>
