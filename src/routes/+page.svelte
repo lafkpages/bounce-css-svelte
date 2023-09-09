@@ -6,5 +6,5 @@
 {#each { length: 6 } as _, i}
 	{@const n = i + 1}
 	{@const tag = `h${n}`}
-	<svelte:element this={tag}>Heading {tag}</svelte:element>
+	<svelte:element this={tag}>Heading {n}</svelte:element>
 {/each}
