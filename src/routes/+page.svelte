@@ -45,6 +45,12 @@
 		{/each}
 	</div>
 
+	<p class="mark-text">
+		Lorem ipsum dolor, sit amet <Mark>consectetur adipisicing</Mark> elit. Numquam dolorem natus cumque
+		porro at vel omnis, enim placeat eligendi aliquam a earum alias architecto ducimus excepturi quisquam
+		quaerat similique veniam.
+	</p>
+
 	<hr />
 
 	<h3>Buttons</h3>
@@ -69,6 +75,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 12px;
+	}
+
+	.mark-text {
+		margin-top: 16px;
 	}
 
 	.buttons {
