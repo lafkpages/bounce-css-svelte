@@ -5,6 +5,9 @@
 		"type": "git",
 		"url": "git+https://github.com/lafkpages/bounce-css-svelte.git"
 	},
+	"bugs": {
+		"url": "https://github.com/lafkpages/bounce-css-svelte/issues"
+	},
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
