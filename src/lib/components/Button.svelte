@@ -32,13 +32,13 @@
 		border: none;
 	}
 
-	button:hover,
-	button:focus-visible {
+	button:not(:disabled):hover,
+	button:not(:disabled):focus-visible {
 		transform: translateX(5px) translateY(-5px);
 		box-shadow: -5px 5px 0 0 var(--shadow, var(--bounce-gray)), -5px 5px 0 2px var(--bounce-black);
 	}
 
-	button:active {
+	button:not(:disabled):active {
 		transform: translateX(2px) translateY(-2px);
 		box-shadow: -3px 3px 0 0 var(--shadow, var(--bounce-gray)), -3px 3px 0 2px var(--bounce-black);
 	}
