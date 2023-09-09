@@ -41,7 +41,7 @@
 	<div class="buttons">
 		{#each colors as color}
 			<Button {color}>Button</Button>
-			<Button {color} disabled>Button</Button>
+			<Button {color} disabled>Disabled</Button>
 		{/each}
 	</div>
 </main>
@@ -56,7 +56,7 @@
 
 	.buttons {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: auto auto;
 		width: max-content;
 		gap: 32px 16px;
 	}
