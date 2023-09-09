@@ -34,4 +34,9 @@
 		transform: translateX(5px) translateY(-5px);
 		box-shadow: -5px 5px 0 0 var(--shadow, var(--bounce-gray)), -5px 5px 0 2px var(--bounce-black);
 	}
+
+	button:active {
+		transform: translateX(2px) translateY(-2px);
+		box-shadow: -3px 3px 0 0 var(--shadow, var(--bounce-gray)), -3px 3px 0 2px var(--bounce-black);
+	}
 </style>
