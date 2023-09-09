@@ -44,6 +44,13 @@
 
 	.rounded {
 		border-radius: 50%;
+		padding: 8px;
+		width: 48px;
+		height: 48px;
+		aspect-ratio: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.button:not(:disabled):hover,
