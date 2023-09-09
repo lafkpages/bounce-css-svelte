@@ -32,4 +32,11 @@
 		box-shadow: -3px 3px 0 0 var(--color-normal, var(--bounce-gray)),
 			-3px 3px 0 1px var(--bounce-black);
 	}
+
+	a:active {
+		outline: 1px solid var(--bounce-black);
+		transform: translateX(1.5px) translateY(-1.5px);
+		box-shadow: -1.5px 1.5px 0 0 var(--color-normal, var(--bounce-gray)),
+			-1.5px 1.5px 0 1px var(--bounce-black);
+	}
 </style>
