@@ -43,6 +43,11 @@
 	--bounce-purple-light: #cdaefd;
 }
 
+* {
+	margin: 0px;
+	font-family: 'Clash Grotesk Medium', sans-serif;
+}
+
 h1 {
 	font-size: 64px;
 	line-height: 96px;
@@ -77,15 +82,6 @@ h6 {
 	font-size: 16px;
 	line-height: 32px;
 	font-family: 'Clash Display Semibold', sans-serif;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	margin: 0px;
 }
 
 hr {
