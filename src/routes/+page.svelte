@@ -8,3 +8,4 @@
 	{@const tag = `h${n}`}
 	<svelte:element this={tag}>Heading {n}</svelte:element>
 {/each}
+<p>Paragraph</p>
