@@ -13,6 +13,9 @@
 		to create simple websites!
 	</p>
 
+	<h3>How to use?</h3>
+	<p>TODO</p>
+
 	<hr />
 
 	<h3>Text</h3>
