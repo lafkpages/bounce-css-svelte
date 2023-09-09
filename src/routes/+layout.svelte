@@ -2,4 +2,6 @@
 	import '$lib/styles.css';
 </script>
 
-<slot />
+<div class="main">
+	<slot />
+</div>
