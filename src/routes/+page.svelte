@@ -5,6 +5,8 @@
 	import Input from '$lib/components/Input.svelte';
 	import Link from '$lib/components/Link.svelte';
 	import Mark from '$lib/components/Mark.svelte';
+
+	let inputsValue = '';
 </script>
 
 <main>
@@ -88,10 +90,16 @@
 
 	<h3>Inputs</h3>
 
+	<p>
+		You wrote: {#if inputsValue}{inputsValue}{:else}
+			<i>nothing</i>
+		{/if}
+	</p>
+
 	{#each colors as color}
-		<Input {color} placeholder="Input" />
+		<Input {color} placeholder="Input" bind:value={inputsValue} />
 	{/each}
-	<Input disabled placeholder="Disabled" />
+	<Input disabled placeholder="Disabled" bind:value={inputsValue} />
 </main>
 
 <style>
