@@ -3,12 +3,12 @@
 </script>
 
 <nav>
-	<div>
+	<a href="/">
 		<Button color="cyan" rounded>
 			<h3>B</h3>
 		</Button>
 		<h3 class="rainbow">bounce.css Svelte</h3>
-	</div>
+	</a>
 
 	<div class="buttons">
 		<Button href="/demo">View demo page</Button>
@@ -17,9 +17,10 @@
 </nav>
 
 <style>
-	nav > div {
+	nav > * {
 		display: flex;
 		gap: 8px;
+		text-decoration: none;
 	}
 
 	.buttons {
