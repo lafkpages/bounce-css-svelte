@@ -11,11 +11,19 @@
 		</div>
 	</div>
 
-	<div>
-		<Button>View demo page</Button>
+	<div class="nav-buttons">
+		<Button href="/demo">View demo page</Button>
+		<Button href="/#how-anchor" color="cyan">Use library</Button>
 	</div>
 </nav>
 
 <div class="main">
 	<slot />
 </div>
+
+<style>
+	.nav-buttons {
+		display: flex;
+		gap: 16px;
+	}
+</style>
