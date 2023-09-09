@@ -2,6 +2,7 @@
 	import { colors } from '$lib';
 
 	import Button from '$lib/components/Button.svelte';
+	import Mark from '$lib/components/Mark.svelte';
 </script>
 
 <main>
@@ -36,6 +37,16 @@
 
 	<hr />
 
+	<h3>Mark</h3>
+
+	<div class="marks">
+		{#each colors as color}
+			<Mark {color}>Mark</Mark>
+		{/each}
+	</div>
+
+	<hr />
+
 	<h3>Buttons</h3>
 
 	<div class="buttons">
@@ -52,6 +63,12 @@
 		height: 100%;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.marks {
+		display: flex;
+		flex-direction: column;
+		gap: 12px;
 	}
 
 	.buttons {
