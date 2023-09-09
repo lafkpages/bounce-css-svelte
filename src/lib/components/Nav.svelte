@@ -17,8 +17,12 @@
 </nav>
 
 <style>
-	.buttons {
+	nav > div {
 		display: flex;
+		gap: 8px;
+	}
+
+	.buttons {
 		gap: 16px;
 	}
 </style>
