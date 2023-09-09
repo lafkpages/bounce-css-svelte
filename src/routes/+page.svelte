@@ -67,9 +67,11 @@
 
 	<h3>Links</h3>
 
-	{#each [null, ...colors] as color}
-		<Link href="#" {color}>Link</Link>
-	{/each}
+	<div class="links">
+		{#each [null, ...colors] as color}
+			<Link href="#" {color}>Link</Link>
+		{/each}
+	</div>
 </main>
 
 <style>
@@ -95,5 +97,11 @@
 		grid-template-columns: auto auto;
 		width: max-content;
 		gap: 32px 16px;
+	}
+
+	.links {
+		display: flex;
+		gap: 32px;
+		flex-wrap: wrap;
 	}
 </style>
