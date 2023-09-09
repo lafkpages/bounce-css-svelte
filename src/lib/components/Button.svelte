@@ -2,11 +2,14 @@
 	import type { OptionalColor } from '$lib';
 
 	export let color: OptionalColor = null;
+	export let disabled = false;
 </script>
 
 <button
 	style:--color="var(--bounce-{color}-normal)"
 	style:--shadow={color ? `var(--bounce-${color}-dark)` : null}
+	style:--border={disabled ? `var(--bounce-${color}-light)` : null}
+	{disabled}
 >
 	<slot />
 </button>
@@ -19,7 +22,7 @@
 		color: var(--bounce-black);
 		padding: 8px 32px;
 		border-radius: 2px;
-		outline: 2px solid var(--bounce-black);
+		outline: 2px solid var(--border, var(--bounce-black));
 		cursor: pointer;
 		transition: transform 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5),
 			box-shadow 0.3s cubic-bezier(0.18, 0.89, 0.32, 1.5);
@@ -38,5 +41,10 @@
 	button:active {
 		transform: translateX(2px) translateY(-2px);
 		box-shadow: -3px 3px 0 0 var(--shadow, var(--bounce-gray)), -3px 3px 0 2px var(--bounce-black);
+	}
+
+	button:disabled {
+		cursor: not-allowed;
+		color: var(--bounce-gray);
 	}
 </style>
