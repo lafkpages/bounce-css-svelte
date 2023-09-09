@@ -1,9 +1,10 @@
 <script lang="ts">
+	export let disabled = false;
 	export let placeholder: string | null = null;
 	export let value = '';
 </script>
 
-<input type="text" {placeholder} bind:value />
+<input type="text" {disabled} {placeholder} bind:value />
 
 <style>
 	input {
@@ -24,16 +25,23 @@
 		border: none;
 	}
 
-	input:hover,
-	input:focus-visible {
+	input:not(:disabled):hover,
+	input:not(:disabled):focus-visible {
 		transform: translateX(5px) translateY(-5px);
 		outline: 2px solid var(--bounce-black);
 		box-shadow: -5px 5px 0 0 var(--bounce-gray), -5px 5px 0 2px var(--bounce-black);
 	}
 
-	input:active {
+	input:not(:disabled):active {
 		box-shadow: -3px 3px 0 0 var(--bounce-gray), -3px 3px 0 2px var(--bounce-black);
 		transform: translateX(2px) translateY(-2px);
 		outline: 2px solid var(--bounce-black);
+	}
+
+	input:disabled {
+		background: var(--bounce-white);
+		color: var(--bounce-gray);
+		outline: 2px solid var(--bounce-gray);
+		cursor: not-allowed;
 	}
 </style>
