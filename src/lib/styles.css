@@ -56,3 +56,10 @@ h2 {
 	font-family: 'Clash Display Bold', sans-serif;
 	margin: 0px;
 }
+
+h3 {
+	font-size: 32px;
+	line-height: 64px;
+	font-family: 'Clash Display Semibold', sans-serif;
+	margin: 0px;
+}
