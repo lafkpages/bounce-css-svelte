@@ -4,6 +4,7 @@
 	export let color: OptionalColor = null;
 	export let disabled = false;
 	export let href: string | null = null;
+	export let rounded = false;
 </script>
 
 <svelte:element
@@ -12,6 +13,7 @@
 	tabindex="0"
 	{href}
 	class="button"
+	class:rounded
 	style:--color-normal={color ? `var(--bounce-${color}-normal)` : null}
 	style:--color-dark={color ? `var(--bounce-${color}-dark)` : null}
 	style:--color-light={disabled ? `var(--bounce-${color}-light)` : null}
@@ -38,6 +40,10 @@
 		margin: 8px 0 8px 0;
 		border: none;
 		text-decoration: none;
+	}
+
+	.rounded {
+		border-radius: 50%;
 	}
 
 	.button:not(:disabled):hover,
