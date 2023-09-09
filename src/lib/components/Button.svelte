@@ -11,6 +11,7 @@
 	role="button"
 	tabindex="0"
 	{href}
+	class="button"
 	style:--color-normal={color ? `var(--bounce-${color}-normal)` : null}
 	style:--color-dark={color ? `var(--bounce-${color}-dark)` : null}
 	style:--color-light={disabled ? `var(--bounce-${color}-light)` : null}
@@ -21,7 +22,7 @@
 </svelte:element>
 
 <style>
-	button {
+	.button {
 		font-size: 16px;
 		line-height: 24px;
 		font-family: Clash Display Semibold;
@@ -36,22 +37,23 @@
 		background: var(--color-normal);
 		margin: 8px 0 8px 0;
 		border: none;
+		text-decoration: none;
 	}
 
-	button:not(:disabled):hover,
-	button:not(:disabled):focus-visible {
+	.button:not(:disabled):hover,
+	.button:not(:disabled):focus-visible {
 		transform: translateX(5px) translateY(-5px);
 		box-shadow: -5px 5px 0 0 var(--color-dark, var(--bounce-gray)),
 			-5px 5px 0 2px var(--bounce-black);
 	}
 
-	button:not(:disabled):active {
+	.button:not(:disabled):active {
 		transform: translateX(2px) translateY(-2px);
 		box-shadow: -3px 3px 0 0 var(--color-dark, var(--bounce-gray)),
 			-3px 3px 0 2px var(--bounce-black);
 	}
 
-	button:disabled {
+	.button:disabled {
 		background-color: var(--color-light);
 		cursor: not-allowed;
 		color: var(--color-dark);
