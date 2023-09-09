@@ -48,6 +48,20 @@
 	font-family: 'Clash Grotesk Medium', sans-serif;
 }
 
+nav {
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 8px 32px;
+	border-bottom: 2px solid var(--bounce-black);
+	background-color: var(--bounce-white);
+	z-index: 2;
+}
+
 div.main {
 	max-width: 600px;
 	margin: 128px auto 0px;
