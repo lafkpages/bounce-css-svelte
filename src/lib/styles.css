@@ -84,6 +84,20 @@ h6 {
 	font-family: 'Clash Display Semibold', sans-serif;
 }
 
+p,
+b,
+u,
+s,
+li,
+mark,
+a,
+td,
+th,
+select {
+	font-size: 16px;
+	line-height: 28px;
+}
+
 hr {
 	height: 2px;
 	border-radius: 2px;
