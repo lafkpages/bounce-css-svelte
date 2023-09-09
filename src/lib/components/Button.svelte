@@ -3,9 +3,12 @@
 
 	export let color: OptionalColor = null;
 	export let disabled = false;
+	export let href: string | null = null;
 </script>
 
-<button
+<svelte:element
+	this={href ? 'a' : 'button'}
+	{href}
 	style:--color-normal={color ? `var(--bounce-${color}-normal)` : null}
 	style:--color-dark={color ? `var(--bounce-${color}-dark)` : null}
 	style:--color-light={disabled ? `var(--bounce-${color}-light)` : null}
@@ -13,7 +16,7 @@
 	on:click
 >
 	<slot />
-</button>
+</svelte:element>
 
 <style>
 	button {
