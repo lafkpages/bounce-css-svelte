@@ -10,6 +10,7 @@
 	style:--color-dark={color ? `var(--bounce-${color}-dark)` : null}
 	style:--color-light={disabled ? `var(--bounce-${color}-light)` : null}
 	{disabled}
+	on:click
 >
 	<slot />
 </button>
